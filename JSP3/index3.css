@@ -1,0 +1,118 @@
+*
+{
+  margin: 0 ;
+  padding: 0;
+}
+
+
+.container
+{
+  height: 100vh ;
+  width: 100% ;
+  font-family: sans-serif;
+  background: rgba(187, 187, 245);
+  color: #fff ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.card
+{
+height: 500px  ;
+width: 350px ;
+box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
+}
+
+.innerbox
+{
+  position: relative;
+  width: 100% ;
+  height: 100% ;
+}
+
+.cardfront,.cardback
+{
+
+  position: absolute ;
+  width: 100% ;
+  height: 100% ;
+  background-position: center;
+background-size: cover;
+background-image: linear-gradient(rgba(0,0,100,0.8),rgba(0, 0, 100, 0.8)),url(bg.jpg);
+padding: 50px ;
+box-sizing: border-box;
+backface-visibility: hidden;
+}
+
+.cardback
+{
+  transform:rotateY(180deg);
+
+}
+
+.card h2
+{
+  font-weight: normal;
+  font-size: 24px ;
+  text-align: center;
+  margin-bottom: 20px ;
+}
+
+.inputbox
+{
+  width: 100% ;
+  background: transparent ;
+  border: 1px solid #fff ;
+  margin: 6px 0 ;
+  height: 32px ;
+  border-radius: 20px;
+  padding: 0 10px ;
+  box-sizing: border-box;
+  outline: none ;
+  text-align: center;
+  color: #fff ;
+}
+::placeholder
+{
+  color: #fff;
+  font-size: 12px ;
+
+}
+
+.btn
+{
+  width: 100% ;
+  background: transparent ;
+  border: 1px solid #fff ;
+  margin : 35px 0 10px ;
+  height: 32px;
+  font-size: 12px ;
+  border-radius: 20px ;
+padding: 0 10px ;
+box-sizing: border-box;
+outline: none ;
+color: #fff ;
+cursor: pointer;
+}
+
+span
+{
+  font-size: 13px ;
+  margin-left: 10px ;
+}
+
+.card .button{
+  margin-top: 70px ;
+}
+
+.card a
+{
+  text-decoration: none;
+  color:#fff;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+}
